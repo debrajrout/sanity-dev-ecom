@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { client, urlFor } from "@/app/lib/sanity";
 import Link from "next/link";
+import Neweproducts from "./Neweproducts";
 
 async function getData() {
   const query = "*[_type == 'heroImage'][0]";
@@ -48,25 +49,26 @@ export default async function Hero() {
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="flex h-12 w-64 divide-x overflow-hidden rounded-lg border">
           <Link
-            href="/Men"
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+            href="/Clothings"
+            className="flex text-sm w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-lime-200 active:bg-gray-200"
           >
-            Men
+            Clothings
           </Link>
           <Link
-            href="/Women"
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+            href="/Electronics"
+            className="flex text-sm w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-lime-200 active:bg-gray-200"
           >
-            Women
+            Electronics
           </Link>
           <Link
-            href="/Kids"
-            className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+            href="/Books"
+            className="flex text-sm w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-lime-200 active:bg-gray-200"
           >
-            Kids
+            Books
           </Link>
         </div>
       </div>
+      <Neweproducts />
     </section>
   );
 }

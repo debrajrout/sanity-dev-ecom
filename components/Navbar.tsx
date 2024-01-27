@@ -7,9 +7,9 @@ import { BaggageClaim } from "lucide-react";
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "Men", href: "/Men" },
-  { name: "Women", href: "/Women" },
-  { name: "Kids", href: "/Kids" },
+  { name: "Clothings", href: "/Clothings" },
+  { name: "Electronics", href: "/Electronics" },
+  { name: "Books", href: "/Books" },
 ];
 
 export default function Navbar() {
